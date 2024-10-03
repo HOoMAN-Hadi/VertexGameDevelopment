@@ -11,8 +11,7 @@
 @layer base {
   @font-face {
     font-family: "monterey";
-    font-weight: 400;
-    src: url("../assets/fonts/MontereyFLF-BoldItalic.ttf juice\ 2.0.ttf")
-      format("truetype");
+    font-weight: 900;
+    src: url("../assets/fonts/MontereyFLF-BoldItalic.ttf") format("truetype");
   }
 }
