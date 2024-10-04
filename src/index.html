@@ -35,11 +35,11 @@
       }
     </style>
   </head>
-  <body class="font-monterey">
+  <body class="font-monterey animate-animatefadeIn">
     <section class="background-image height">
       <!-- تصویر پس‌زمینه -->
       <!-- خطوط نارنجی دور صفحه -->
-      <div class="border-gradient">
+      <div class="border-gradient z-50">
         <!---منوی ناوبری با -->
         <nav class="flex font-twentyeightdays tracking-wider">
           <!-- لوگو -->
@@ -52,41 +52,41 @@
           <div class="container flex justify-center pt-2 relative bottom-8">
             <!-- لینک‌های منو -->
             <ul class="flex gap-9 text-black te font-bold">
-              <li>
+              <li class="moving-item">
                 <a href="#"
                   ><button
                     type="button"
-                    class="bg-gradient-to-r from-[#00ffea] to-pink-500 hover:bg-gradient-to-b focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs"
+                    class="bg-gradient-to-r from-[#00ffea] to-pink-500 hover:bg-gradient-to-b focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs transition-transform transform hover:scale-105 duration-500"
                   >
                     Home
                   </button>
                 </a>
               </li>
-              <li>
+              <li class="moving-item">
                 <a href="#"
                   ><button
                     type="button"
-                    class="bg-gradient-to-r from-[#00ffea] to-pink-500 hover:bg-gradient-to-b focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs"
+                    class="bg-gradient-to-r from-[#00ffea] to-pink-500 hover:bg-gradient-to-b focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs transition-transform transform hover:scale-105 duration-500"
                   >
                     Games
                   </button>
                 </a>
               </li>
-              <li>
+              <li class="moving-item">
                 <a href="#"
                   ><button
                     type="button"
-                    class="bg-gradient-to-l from-pink-500 to-[#00ffea] hover:bg-gradient-to-t focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs"
+                    class="bg-gradient-to-l from-pink-500 to-[#00ffea] hover:bg-gradient-to-t focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs transition-transform transform hover:scale-105 duration-500"
                   >
                     About us
                   </button>
                 </a>
               </li>
-              <li>
+              <li class="moving-item">
                 <a href="#"
                   ><button
                     type="button"
-                    class="bg-gradient-to-l from-pink-500 to-[#00ffea] hover:bg-gradient-to-t focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs"
+                    class="bg-gradient-to-l from-pink-500 to-[#00ffea] hover:bg-gradient-to-t focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-black rounded-lg px-5 py-2.5 text-center me-2 shadow-bs2 hover:shadow-bs transition-transform transform hover:scale-105 duration-500"
                   >
                     Contact us
                   </button>
@@ -99,13 +99,13 @@
         <!-- محتوای صفحه -->
         <div class="text-white flex flex-col justify-between pt-24 h-full">
           <div
-            class="bg-opacity-20 bg-gray-300 text-black rounded-lg w-1/3 backdrop-blur-sm ml-4 text-center p-2"
+            class="animate-movingobject z-10 bg-opacity-20 bg-gray-300 text-black rounded-lg w-1/3 backdrop-blur-sm ml-4 text-center p-2"
           >
-            <h1 class="text-2xl font-bold mb-4">
+            <h1 class="text-3xl font-bold mb-4">
               VERTEX: "Where creativity reaches the pinnacle of game
               development!"
             </h1>
-            <p class="text-md font-semibold font-twentyeightdays">
+            <p class="text-lg font-semibold font-twentyeightdays">
               At Vertex, we push the boundaries of imagination and innovation to
               craft immersive gaming experiences.
             </p>
@@ -114,7 +114,11 @@
           <div
             class="absolute right-2 h-1/2 bottom-3 flex flex-col items-end justify-between"
           >
-            <a href="#" id="mailIcon">
+            <a
+              href="#"
+              id="mailIcon"
+              class="transition-transform transform hover:scale-110 hover:rotate-12 duration-300 moving-icon"
+            >
               <svg
                 class="w-[40px] fill-white"
                 viewBox="0 0 448 512"
@@ -126,7 +130,11 @@
                 ></path>
               </svg>
             </a>
-            <a href="#" id="instaIcon">
+            <a
+              href="#"
+              id="instaIcon"
+              class="transition-transform transform hover:scale-110 hover:rotate-12 duration-300 moving-icon"
+            >
               <svg
                 class="w-[40px] fill-white"
                 viewBox="0 0 448 512"
@@ -138,7 +146,12 @@
                 ></path>
               </svg>
             </a>
-            <a href="https://github.com/HOoMAN-Hadi" id="githubIcon">
+            <a
+              href="https://github.com/HOoMAN-Hadi"
+              target="_blank"
+              id="githubIcon"
+              class="transition-transform transform hover:scale-110 hover:rotate-12 duration-300 moving-icon"
+            >
               <svg
                 class="w-[40px] fill-white"
                 viewBox="0 0 448 512"
@@ -150,7 +163,11 @@
                 ></path>
               </svg>
             </a>
-            <a href="#" id="telIcon">
+            <a
+              href="#"
+              id="telIcon"
+              class="transition-transform transform hover:scale-110 hover:rotate-12 duration-300 moving-icon"
+            >
               <svg
                 class="w-[40px] fill-white"
                 viewBox="0 0 496 512"
@@ -162,7 +179,11 @@
                 ></path>
               </svg>
             </a>
-            <a href="#" id="supportIcon">
+            <a
+              href="#"
+              id="supportIcon"
+              class="transition-transform transform hover:scale-110 hover:rotate-12 duration-300 moving-icon"
+            >
               <svg
                 class="w-[40px] fill-white"
                 viewBox="0 0 512 512"
@@ -180,17 +201,18 @@
           >
             <a
               href="#"
-              class="px-6 py-3 bg-[#12a79a] shadow-bs2 hover:shadow-bs hover:bg-[#0e8a7f] rounded-lg"
+              class="px-6 py-3 bg-[#12a79a] shadow-bs2 hover:shadow-bs hover:bg-[#0e8a7f] rounded-lg transition-transform transform hover:scale-105 duration-500"
               >PulseFire</a
             >
             <a
               href="#"
-              class="px-4 py-3 bg-purple-500 shadow-bs2 hover:shadow-bs hover:bg-purple-600 rounded-lg"
+              class="px-4 py-3 bg-purple-500 shadow-bs2 hover:shadow-bs hover:bg-purple-600 rounded-lg transition-transform transform hover:scale-105 duration-500"
               >Office Address</a
             >
           </div>
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
